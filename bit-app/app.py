@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
-from dotenv import load_dotenv # for API keys
 import requests # for connection to Airtable API
 import json
 
 AIRTABLE_KEY = os.getenv('AIRTABLE_KEY')
-print(AIRTABLE_KEY)
 
 app = Flask(__name__)
 
