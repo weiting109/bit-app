@@ -1,3 +1,3 @@
 DEBUG=True
 FLASK_ENV=development
-FLASK_APP=bit-app
+FLASK_APP=bitapp

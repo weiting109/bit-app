@@ -3,13 +3,11 @@ import os
 import requests     # for connection to Airtable API
 import json         # for reading responses
 import logging      # for logging messages
+from bitapp import app
 
 # importing environment variables 
 AIRTABLE_KEY = os.getenv('AIRTABLE_KEY')
 AIRTABLE_API_URL = os.getenv('AIRTABLE_API_URL')
-
-# instantiate Flask app
-app = Flask(__name__)
 
 # configure logger
 logging.basicConfig(filename='record.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
