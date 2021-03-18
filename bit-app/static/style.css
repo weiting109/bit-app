@@ -1,0 +1,31 @@
+html, body, header {
+    height: 100%;
+}
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.landing-img{
+    background-image: url('landing-bg-img-md-gradient.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    mask-image: linear-gradient(to bottom, transparent 50%, black 50%);
+}
+
+.landing-text{
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.subsubtitle {
+    font-style: bold;
+    font-size: 1em;
+}
