@@ -4,6 +4,7 @@ import requests # for connection to Airtable API
 import json
 
 AIRTABLE_KEY = os.getenv('AIRTABLE_KEY')
+AIRTABLE_API_URL = os.getenv('AIRTABLE_API_URL')
 
 app = Flask(__name__)
 
@@ -12,7 +13,6 @@ def index():
     """
     Route for landing page
     """
-    print("LOADING HERE")
     return render_template('index.html')
 
 @app.route('/api/subscribe/', methods=['POST'])
@@ -28,7 +28,7 @@ def subscribe():
     }
     data = { "records": [ { "fields": { "Email": email } } ] }
 
-    r = requests.post('https://api.airtable.com/v0/app1Gt3CaYpphpsGV/Table%201', headers=headers, data=json.dumps(data))
+    r = requests.post(AIRTABLE_API_URL, headers=headers, data=json.dumps(data))
 
     return redirect(url_for('index'))
 
