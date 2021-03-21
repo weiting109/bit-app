@@ -1,5 +1,5 @@
 ## Project structure
-The app is created with the Flask microframework, and HTML and CSS for styling with the help of Bootstrap.
+The app is created with the Flask microframework, and HTML and CSS for styling with the help of Bootstrap. A prototype of the landing page can be found at https://break-into-tech-weekly.herokuapp.com/.
 
 ## Instructions
 
